@@ -1,0 +1,156 @@
+#searchWrapper {
+  width: 300px;
+  position: relative;
+
+  .searchLabel {
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .searchLabelName {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+  }
+
+  .searchInput {
+    width: 100%;
+    padding: 17px 25px;
+    background-color: $color23;
+    border: 1px solid $color23;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      border-color: $color3;
+    }
+
+    &:disabled {
+      color: $color21;
+
+      & + .searchLoading {
+        opacity: 1;
+      }
+    }
+  }
+
+  .searchLoading {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 0.2s ease;
+    border: 3px solid $color3;
+    animation: searchLoadingAnimation 1s infinite linear;
+
+    border-top-color: transparent;
+  }
+
+  .searchResult {
+    width: 100%;
+    margin-top: -5px;
+    position: absolute;
+    border-radius: 5px;
+
+    &--active {
+      opacity: 1;
+      z-index: 10;
+    }
+  }
+
+  .searchList {
+    margin: 5px 0 0;
+    padding: 0;
+    background-color: $color6;
+    border-radius: 5px;
+    max-height: 380px;
+    overflow: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 2px 1px $color2;
+  }
+
+  .searchResultItem {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .searchResultLink {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 14px;
+    border-bottom: 1px solid lighten($color1, 70);
+  }
+
+  .searchResultItem {
+    &:last-child {
+      .searchResultLink {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .searchMemberImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: $color2;
+  }
+
+  .searchMemberData {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+
+  .searchMemberName {
+    color: $color1;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    letter-spacing: 0.1px;
+  }
+
+  .searchMemberLocation {
+    color: lighten($color1, 30);
+    font-weight: 400;
+    transition: color 0.2s ease;
+    letter-spacing: 0.1px;
+  }
+
+  .searchResultLink {
+    &:hover {
+      .searchMemberName {
+        color: $color3;
+      }
+
+      .searchMemberLocation {
+        color: $color3;
+      }
+    }
+  }
+
+  &:hover {
+    .searchResult {
+    }
+  }
+}
+
+@keyframes searchLoadingAnimation {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}

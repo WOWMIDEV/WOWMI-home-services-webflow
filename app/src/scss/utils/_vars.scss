@@ -1,0 +1,50 @@
+$color1: #000000;
+$color2: #e0e0e0;
+$color3: #ce1126;
+$color4: #eefafc;
+$color5: #ce1126;
+$color6: #ffffff;
+$color7: #000000;
+$color8: #dcdcdd;
+$color9: #ededed;
+$color10: #ce1126;
+$color11: #999999;
+$color12: #b40f21;
+$color13: #000000;
+$color14: #aaaaaa;
+$color15: #b40f21;
+$color16: #b40f21;
+$color17: #219653;
+$color18: #b40f21;
+$color19: #ce1126;
+$color20: #333333;
+$color21: #5b5b5b;
+//$color22: #9de0e6;
+$color23: #f3f3f3;
+
+$list-bg-color: $color6;
+$list-text-color: inherit; /* Use "inherit" to take on parent text color */
+$select-field-arrow-color: $color7; /* This is the select field arrow color */
+$border-color-active: $color6; /* Active State */
+$border-color-hover: $color6; /* Select Field could be the same as your form field border color */
+$list-item-bg-color: rgba(255, 255, 255, 0.2); /* Select Field Hover/Focus State */
+$select-field-padding-left: 12px; /* Match the padding values for your form fields */
+$select-field-padding-right: 12px; /* Match the padding values for your form fields */
+$list-padding-top-bottom: 10px; /* This is the top and bottom padding for the dropdown list */
+$list-max-height: 150px; /* You can set this to "Auto" as well */
+$list-item-padding-left: 18px;
+$list-item-padding-right: 18px;
+$list-item-min-height: 40px; /* This is the height of each list item in the dropdown */
+$list-item-line-height: 40px; /* This is the height of each list item in the dropdown */
+
+$desktop-x: 1920px;
+$desktop-m: 1440px;
+$desktop-s: 1280px;
+
+$tablet-x: 1024px;
+$tablet-m: 991px;
+$tablet-s: 767px;
+
+$mobile-x: 479px;
+$mobile-m: 375px;
+$mobile-s: 320px;

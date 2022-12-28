@@ -1,0 +1,110 @@
+#buyside-widget-container {
+  flex: 100%;
+
+  @include media-mobile-x {
+    width: 100%;
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    padding-right: 3px;
+    background: $color6;
+    border-radius: 6px;
+
+    @include media-mobile-x {
+      flex-direction: column;
+      background-color: transparent;
+    }
+  }
+
+  .buyside_widget_input_div {
+    @include media-mobile-x {
+      padding-right: 0;
+    }
+  }
+
+  .buyside_widget_input_div {
+    flex: 1;
+    display: flex;
+
+    @include media-mobile-x {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#buyside_widget_submit_id {
+  order: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  padding: 8px 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  background-color: $color3;
+  -webkit-transition: background-color 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: background-color 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  color: $color6;
+
+  &:hover {
+    background-color: $color18;
+  }
+
+  @include media-mobile-x {
+    width: 100%;
+    height: 60px;
+  }
+
+  .report__arrow {
+    display: inline-block;
+    padding-left: 10px;
+  }
+}
+
+#buyside-widget-containerinputId {
+  margin: 0;
+  background-color: $color6;
+  font-size: 14px;
+}
+
+#buyside-widget-containerinputIdautocomplete-list {
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+  padding: 0;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: $color6;
+  border: 3px solid $color4;
+  border-radius: 8px;
+
+  @include media-mobile-x {
+    top: 80px;
+  }
+
+  .buyside_widget_autocomplete_item {
+    padding: 5px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $color21;
+    border-radius: 4px;
+
+    strong {
+      color: $color3;
+      font-weight: 600;
+    }
+  }
+}
