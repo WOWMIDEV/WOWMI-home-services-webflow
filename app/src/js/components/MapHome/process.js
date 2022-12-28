@@ -98,7 +98,7 @@ export const process = () => {
   const config = {
     color1: '#f1f1f1',
     color2: '#000000',
-    color3: '#ce1126',
+    color3: '#000000',
     baseUrl: '/state/',
     location: window.location,
     space: 20,
